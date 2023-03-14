@@ -17,4 +17,14 @@
 body {
   font-family: "Poppins", sans-serif;
   min-height: 100vh;
+  font-size: 1.125rem;
+  position: relative;
+  max-width: 35rem;
+  margin-inline: auto;
+}
+
+@media (min-width: 58.75rem) {
+  body {
+    max-width: 100%;
+  }
 }

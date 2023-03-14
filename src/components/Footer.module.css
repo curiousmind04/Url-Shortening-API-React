@@ -1,0 +1,74 @@
+footer {
+  background-color: hsl(260, 8%, 14%);
+  color: #fff;
+  text-align: center;
+  padding: 3.4rem 0 3.4rem 0;
+}
+
+footer > svg {
+  margin-bottom: 2.6rem;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.6rem;
+}
+
+.links > h4 {
+  font-size: 0.95rem;
+  margin-bottom: 1.4rem;
+}
+
+a {
+  color: hsl(0, 0%, 75%);
+  font-size: 0.93rem;
+  text-decoration: none;
+  margin-bottom: 0.7rem;
+  cursor: pointer;
+}
+
+.socials {
+  width: 10.5rem;
+  margin: auto;
+  padding-top: 0.8rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.socials > svg {
+  cursor: pointer;
+}
+
+@media (min-width: 58.75rem) {
+  footer {
+    padding: 4.5rem 1.2rem 2.2rem 1.2rem;
+  }
+  .container {
+    max-width: 69rem;
+    margin-inline: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  .actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 5rem;
+  }
+  .actions > :nth-child(2),
+  .actions > :nth-child(3) {
+    margin-right: 1.5rem;
+  }
+  .links {
+    align-items: flex-start;
+  }
+  .socials {
+    padding-top: 0;
+    margin: 0;
+  }
+}

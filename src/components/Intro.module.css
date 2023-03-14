@@ -1,0 +1,145 @@
+.illustration {
+  background-image: url("images/illustration-working.svg");
+  background-size: auto 21rem;
+  background-position: left 1.3rem bottom;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 21rem;
+  margin-bottom: 1.2rem;
+}
+
+.intro {
+  padding: 1.5rem;
+  padding-bottom: 0.5rem;
+  text-align: center;
+}
+
+h1 {
+  color: hsl(260, 8%, 14%);
+  font-size: 2.5rem;
+  line-height: 2.8rem;
+  margin-bottom: 0.8rem;
+}
+
+.intro > p {
+  color: hsl(257, 7%, 63%);
+  font-size: 1.1rem;
+  line-height: 1.9rem;
+  margin-bottom: 1.8rem;
+}
+
+.intro button {
+  background-color: hsl(180, 66%, 49%);
+  color: #fff;
+  height: 3.6rem;
+  width: 12rem;
+  border: none;
+  border-radius: 2.4rem;
+  outline: none;
+  font: inherit;
+  font-size: 1.2rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+form {
+  background-image: url("/images/bg-shorten-mobile.svg");
+  background-color: hsl(257, 27%, 26%);
+  background-repeat: no-repeat;
+  background-size: 70% 80%;
+  background-position: right top;
+  border-radius: 0.6rem;
+  margin-inline: 1.5rem;
+  padding: 1.5rem;
+  position: relative;
+  top: 80px;
+}
+
+form input,
+form button {
+  height: 3rem;
+  width: 100%;
+  border-radius: 0.3rem;
+  border: none;
+  outline: none;
+  font: inherit;
+  cursor: pointer;
+}
+
+form input {
+  margin-bottom: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-size: 1rem;
+}
+
+form input::placeholder {
+  color: hsl(257, 7%, 63%);
+}
+
+form button {
+  background-color: hsl(180, 66%, 49%);
+  color: #fff;
+  font-weight: 700;
+}
+
+@media (min-width: 58.75rem) {
+  .container {
+    display: grid;
+    grid-template-columns: 57% 43%;
+    margin-left: calc((100% - 77.2%) / 2);
+    align-items: center;
+  }
+  .illustration {
+    background-size: auto 30rem;
+    background-position: left 2.4rem bottom;
+    grid-column: 2;
+    margin: 0;
+    width: 100%;
+    height: 30rem;
+  }
+  .intro {
+    grid-column: 1;
+    grid-row: 1;
+    text-align: left;
+    padding: 0;
+  }
+  h1 {
+    font-size: 4.75rem;
+    line-height: 5.5rem;
+  }
+  .intro p {
+    width: 75%;
+    font-size: 1.38rem;
+    line-height: 2.2rem;
+    margin-bottom: 2.2rem;
+  }
+  form {
+    width: 77.2%;
+    max-width: 69.5rem;
+    margin-inline: auto;
+    background-image: url("/images/bg-shorten-desktop.svg");
+    background-size: cover;
+    display: flex;
+    gap: 1.5rem;
+    padding: 3.2rem 4rem;
+  }
+  form input,
+  form button {
+    height: 4rem;
+    border-radius: 0.6rem;
+  }
+  form input {
+    margin-bottom: 0;
+    padding-left: 1.8rem;
+    padding-right: 1.8rem;
+    font-size: 1.24rem;
+  }
+  form input::placeholder {
+    font-size: 1.24rem;
+  }
+  form button {
+    width: 14rem;
+    font-size: 1.2rem;
+  }
+}
