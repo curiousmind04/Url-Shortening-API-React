@@ -6,7 +6,7 @@ function ListItem(props) {
   const [copied, setCopied] = useState(false);
 
   return (
-    <div key={props.short} className={classes.result}>
+    <div className={classes.result}>
       <p>{props.full}</p>
       <div className={classes.hr}></div>
       <div className={classes.right}>
