@@ -55,7 +55,8 @@ form {
   top: 80px;
 }
 
-form input,
+form .input,
+form .error,
 form button {
   height: 3rem;
   width: 100%;
@@ -66,21 +67,52 @@ form button {
   cursor: pointer;
 }
 
-form input {
-  margin-bottom: 1rem;
+form .input,
+form .error {
+  /* margin-bottom: 1rem; */
   padding-left: 1rem;
   padding-right: 1rem;
   font-size: 1rem;
 }
 
-form input::placeholder {
+form .error {
+  color: hsl(0, 87%, 67%);
+  border: 2px solid hsl(0, 87%, 67%);
+}
+
+form .input::placeholder {
   color: hsl(257, 7%, 63%);
+}
+
+form .error::placeholder {
+  color: hsl(0, 87%, 67%);
 }
 
 form button {
   background-color: hsl(180, 66%, 49%);
   color: #fff;
   font-weight: 700;
+  margin-top: 1rem;
+}
+
+.message {
+  display: none;
+  color: hsl(0, 87%, 67%);
+  font-size: 0.75rem;
+  margin-top: 0.2rem;
+}
+
+.error ~ .message {
+  display: block;
+}
+
+@media (hover: hover) {
+  .intro button:hover {
+    background-color: hsl(180, 84%, 65%);
+  }
+  form button:hover {
+    background-color: hsl(180, 84%, 65%);
+  }
 }
 
 @media (min-width: 58.75rem) {
@@ -124,22 +156,32 @@ form button {
     gap: 1.5rem;
     padding: 3.2rem 4rem;
   }
-  form input,
+  form .input,
+  form .error,
   form button {
     height: 4rem;
     border-radius: 0.6rem;
   }
-  form input {
+  form .input,
+  form .error {
     margin-bottom: 0;
     padding-left: 1.8rem;
     padding-right: 1.8rem;
     font-size: 1.24rem;
   }
-  form input::placeholder {
+  form .input::placeholder,
+  form .error::placeholder {
     font-size: 1.24rem;
   }
   form button {
     width: 14rem;
     font-size: 1.2rem;
+    margin-top: 0;
+  }
+  .message {
+    position: absolute;
+    bottom: 1.4rem;
+    left: 4rem;
+    font-size: 0.9rem;
   }
 }

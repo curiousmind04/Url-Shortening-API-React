@@ -1,0 +1,9 @@
+.results {
+  padding-bottom: 0.1rem;
+}
+
+@media (min-width: 58.75rem) {
+  .results {
+    margin-top: 0.7rem;
+  }
+}

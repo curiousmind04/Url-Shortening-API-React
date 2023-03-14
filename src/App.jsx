@@ -1,28 +1,4 @@
-// Features
-//   Pricing
-//   Resources
-
-//   Login
-//   Sign Up
-
-//   Features
-
-//   Link Shortening
-//   Branded Links
-//   Analytics
-
-//   Resources
-
-//   Blog
-//   Developers
-//   Support
-
-//   Company
-
-//   About
-//   Our Team
-//   Careers
-//   Contact
+import { useState } from "react";
 
 import MainNav from "./components/MainNav";
 import Intro from "./components/Intro";
@@ -30,12 +6,18 @@ import Info from "./components/Info";
 import Footer from "./components/Footer";
 
 function App() {
+  const [list, setList] = useState([]);
+
+  const onAddItem = (item) => {
+    setList((prevList) => prevList.concat(item));
+  };
+
   return (
     <>
       <MainNav />
       <main>
-        <Intro />
-        <Info />
+        <Intro onAddItem={onAddItem} />
+        <Info list={list} />
       </main>
       <Footer />
     </>

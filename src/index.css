@@ -19,12 +19,23 @@ body {
   min-height: 100vh;
   font-size: 1.125rem;
   position: relative;
+}
+
+main {
+  max-width: 35rem;
+  margin-inline: auto;
+}
+
+footer {
   max-width: 35rem;
   margin-inline: auto;
 }
 
 @media (min-width: 58.75rem) {
-  body {
+  main {
+    max-width: 100%;
+  }
+  footer {
     max-width: 100%;
   }
 }

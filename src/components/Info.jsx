@@ -1,9 +1,11 @@
 import classes from "./Info.module.css";
+import List from "./List";
 
-function Info() {
+function Info(props) {
   return (
     <>
       <div className={classes.container}>
+        {props.list.length > 0 && <List list={props.list} />}
         <h2>Advanced Statistics</h2>
         <p>
           Track how your links are performing across the web with our advanced

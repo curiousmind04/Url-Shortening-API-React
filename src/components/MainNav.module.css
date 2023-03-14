@@ -88,6 +88,16 @@
   display: none;
 }
 
+@media (hover: hover) {
+  .mobile > button:hover,
+  .desktop button:hover {
+    background-color: hsl(180, 84%, 65%);
+  }
+  .desktop a:hover {
+    color: hsl(260, 8%, 14%);
+  }
+}
+
 @media (min-width: 58.75rem) {
   .mobile {
     display: none;
