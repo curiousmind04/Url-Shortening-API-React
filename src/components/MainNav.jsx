@@ -14,7 +14,7 @@ function MainNav() {
   };
 
   return (
-    <>
+    <header>
       <div className={classes.container}>
         <div className={classes.logo}>
           <img src="/images/logo.svg" alt="logo" />
@@ -65,7 +65,7 @@ function MainNav() {
           <button onClick={closeMenuHandler}>Sign Up</button>
         </div>
       )}
-    </>
+    </header>
   );
 }
 

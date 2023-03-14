@@ -12,19 +12,19 @@ function Footer() {
         </svg>
         <div className={classes.actions}>
           <div className={classes.links}>
-            <h4>Features</h4>
+            <h2>Features</h2>
             <a href="#">Link Shortening</a>
             <a href="#">Branded Links</a>
             <a href="#">Analytics</a>
           </div>
           <div className={classes.links}>
-            <h4>Resources</h4>
+            <h2>Resources</h2>
             <a href="#">Blog</a>
             <a href="#">Developers</a>
             <a href="#">Support</a>
           </div>
           <div className={classes.links}>
-            <h4>Company</h4>
+            <h2>Company</h2>
             <a href="#">About</a>
             <a href="#">Our Team</a>
             <a href="#">Careers</a>

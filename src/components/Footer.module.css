@@ -5,7 +5,7 @@ footer {
   padding: 3.4rem 0 3.4rem 0;
 }
 
-footer > svg {
+.container > svg {
   margin-bottom: 2.6rem;
 }
 
@@ -17,7 +17,7 @@ footer > svg {
   margin-bottom: 1.6rem;
 }
 
-.links > h4 {
+.links > h2 {
   font-size: 0.95rem;
   margin-bottom: 1.4rem;
 }
